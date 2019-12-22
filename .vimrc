@@ -6,9 +6,17 @@ filetype plugin indent on
 :let mapleader = ","    " set the <leader> key to ,
 
 
+" COPY AND PASTE FROM/TO SYSTEM
+vnoremap <C-c> "*y
+
+
 " FILE HANDLING
 nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q<CR>
+
+
+" AUTOCOMPLETE in insert mode
+inoremap <leader>c <c-n>
 
 
 " SET NO WRAP
@@ -126,3 +134,7 @@ inoremap ;li <li></li><Esc>F<i
 inoremap ;link <link rel="stylesheet" href="main"><Esc>?main<CR>cw
 inoremap ;bootstrap <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"><Esc>
 inoremap ;fontawesome <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"><Esc>
+
+
+" JAVASCRIPT AUTOCOMPLETES
+inoremap ;log console.log("")<Esc>F"i
