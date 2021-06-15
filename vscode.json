@@ -1,0 +1,72 @@
+{
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "vim.smartRelativeLine": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "s"],
+        "commands": [":w"]
+        },
+        {
+        "before": ["<leader>", "q"],
+        "commands": [":q"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["<leader>", "<space>"],
+        "commands": [":nohlsearch"]
+        },
+        {
+        "before": ["B"],
+        "after": ["^"]
+        },
+        {
+        "before": ["E"],
+        "after": ["$"]
+        },
+        {
+        "before": ["Y"],
+        "after": ["y", "$"]
+        },
+        {
+        "before": ["t", "n"],
+        "commands": [":tabnew"]
+        },
+        {
+        "before": ["t", "c"],
+        "commands": [":tabclose"]
+        },
+        {
+        "before": ["t", "l"],
+        "after": ["g", "t"]
+        },
+        {
+        "before": ["t", "h"],
+        "after": ["g", "T"]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    }
+}
